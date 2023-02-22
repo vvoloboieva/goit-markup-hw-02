@@ -4,6 +4,7 @@
   --accent: #e7e9fc;
   --light: #f4f4fd;
   --pressed: #404bbf;
+  --text: #434455;
 }
 
 body {
@@ -27,7 +28,7 @@ body {
   line-height: 1.33;
 }
 
-.logo span {
+.web {
   color: var(--primary);
 }
 
@@ -35,14 +36,14 @@ body {
   color: var(--hero-bg);
 }
 
-h1 {
+.title1 {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
 }
 
-h2 {
+.title2 {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -50,7 +51,7 @@ h2 {
   text-transform: capitalize;
 }
 
-h3 {
+.title3 {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -81,14 +82,14 @@ h3 {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #43445 5;
+  color: var(--text);
   text-decoration: none;
   padding-right: 40px;
 }
 
 .contacts a {
   text-decoration: none;
-  color: #434455;
+  color: var(--text);
 }
 
 .contacts a:hover,
@@ -106,16 +107,11 @@ h3 {
 .hero h1 {
   color: white;
   text-align: center;
-  padding-top: 188px;
-  padding-left: 470px;
-  padding-right: 470px;
 }
 
 .hero button {
   width: 169px;
   height: 56px;
-  left: 636px;
-  top: 428px;
   background-color: var(--primary);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -170,7 +166,6 @@ h3 {
 .projects li {
   width: 360px;
   margin-right: 24px;
-  display: inline-flex;
 }
 
 .team {
@@ -187,4 +182,12 @@ footer {
 
 footer > a {
   color: #fff;
+}
+
+.feature-text,
+.project-type {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--text);
 }
