@@ -32,7 +32,7 @@ body {
   color: var(--primary);
 }
 
-.nav > a {
+.nav > .nav-link {
   color: var(--hero-bg);
 }
 
@@ -58,7 +58,7 @@ body {
   letter-spacing: 0.02em;
 }
 
-.main-menu li {
+.menu-item {
   display: inline-flex;
   font-weight: 500;
   font-size: 16px;
@@ -67,17 +67,17 @@ body {
   padding-right: 40px;
 }
 
-.main-menu a {
+.menu-link {
   text-decoration: none;
   color: var(--hero-bg);
 }
 
-.main-menu a:hover,
-.main-menu a:focus {
+.menu-link:hover,
+.menu-link:focus {
   color: var(--pressed);
 }
 
-.contacts li {
+.cont-item {
   display: inline-flex;
   font-size: 16px;
   line-height: 1.5;
@@ -87,13 +87,14 @@ body {
   padding-right: 40px;
 }
 
-.contacts a {
+.cont-link {
   text-decoration: none;
   color: var(--text);
+  font-style: normal;
 }
 
-.contacts a:hover,
-.contacts a:focus {
+.cont-link:hover,
+.cont-link:focus {
   color: var(--pressed);
 }
 
@@ -104,12 +105,12 @@ body {
   top: 72px;
 }
 
-.hero h1 {
+.hero > .title1 {
   color: white;
   text-align: center;
 }
 
-.hero button {
+.hero-cta {
   width: 169px;
   height: 56px;
   background-color: var(--primary);
@@ -124,8 +125,8 @@ body {
   cursor: pointer;
 }
 
-.hero button:hover,
-.hero button:focus {
+.hero-cta:hover,
+.hero-cta:focus {
   background-color: var(--pressed);
 }
 
@@ -133,7 +134,7 @@ body {
   display: flex;
 }
 
-.projects-nav button {
+.project-type {
   cursor: pointer;
   background-color: var(--light);
   margin-right: 24px;
@@ -149,11 +150,11 @@ body {
   font-style: normal;
 }
 
-.projects-nav li {
+.project-tab {
   list-style: none;
 }
 
-.projects-nav button:hover {
+.project-type:hover {
   background: var(--primary);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -163,16 +164,15 @@ body {
   font-style: normal;
 }
 
-.projects li {
+.project-item {
   width: 360px;
-  margin-right: 24px;
 }
 
 .team {
   background-color: var(--light);
 }
 
-footer {
+.footer {
   background-color: var(--hero-bg);
   font-size: 16px;
   line-height: 1.5;
@@ -180,7 +180,7 @@ footer {
   color: var(--accent);
 }
 
-footer > a {
+.footer > .logo {
   color: #fff;
 }
 
